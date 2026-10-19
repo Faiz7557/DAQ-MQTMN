@@ -1,0 +1,56 @@
+# Bangun APK Android Makhraj di GitHub (tanpa Android SDK di laptop).
+# - Setiap push ke main dan setiap dijalankan manual: APK debug tersedia di tab Actions > run > Artifacts.
+# - Push tag v* (mis. v0.2.0): APK yang sama dilampirkan ke GitHub Releases, sehingga bisa diunduh tanpa login.
+# Repo ini diasumsikan berakar di folder web/ (package.json di root repo).
+name: APK Android
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write # untuk melampirkan APK ke Release saat push tag
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22 # Capacitor 8 butuh Node 22+
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npx cap sync android
+
+      # ponytail: APK debug (ditandatangani kunci debug) cukup untuk juri dan uji coba; untuk Play Store perlu
+      # keystore rilis di GitHub Secrets dan assembleRelease.
+      - name: Gradle assembleDebug
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: Beri nama APK
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk "makhraj-${GITHUB_REF_NAME//\//-}.apk"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: makhraj-apk
+          path: makhraj-*.apk
+
+      - if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: makhraj-*.apk

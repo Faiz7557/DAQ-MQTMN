@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Makhraj</string>
+    <string name="title_activity_main">Makhraj</string>
+    <string name="package_name">id.makhraj.app</string>
+    <string name="custom_url_scheme">id.makhraj.app</string>
+</resources>

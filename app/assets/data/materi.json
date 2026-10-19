@@ -1,0 +1,112 @@
+{
+  "_catatan": "Materi MVP. Semua isi tajwid WAJIB dicocokkan dengan kitab rujukan atau guru tahsin bersanad sebelum rilis. Kolom 'tervalidasi' diubah ke true hanya setelah ditinjau pengajar. Detik klip ('mulai'/'selesai') belum diisi: tim perlu mencatatnya dari video.",
+  "sumberVideo": {
+    "kanal": "Al-Andalasy",
+    "guru": "Asy-Syaikh Aiman Rusydi Suwaid",
+    "playlist": "PLAlKX7OdTPPbUICvGO1w_xFGorWbtBWLu"
+  },
+  "area": [
+    {"id": "jauf", "nama": "Al-Jauf", "arti": "Rongga mulut & tenggorokan", "elips": [160, 160, 70, 34],
+     "deskripsi": "Ruang kosong di mulut dan tenggorokan. Tempat keluarnya huruf mad (bacaan panjang)."},
+    {"id": "halq", "nama": "Al-Halq", "arti": "Tenggorokan", "elips": [214, 192, 16, 38],
+     "deskripsi": "Tiga titik di tenggorokan: pangkal (ء ه), tengah (ع ح), dan ujung (غ خ)."},
+    {"id": "lisan", "nama": "Al-Lisan", "arti": "Lidah", "elips": [150, 148, 50, 16],
+     "deskripsi": "Area paling banyak: 18 huruf keluar dari bagian-bagian lidah."},
+    {"id": "syafatain", "nama": "Asy-Syafatain", "arti": "Dua bibir", "elips": [86, 147, 13, 15],
+     "deskripsi": "Dua bibir. ب dan م dengan merapatkan bibir, و dengan membulatkan bibir tanpa merapatkannya, ف dari bibir bawah dan gigi atas."},
+    {"id": "khaisyum", "nama": "Al-Khaisyum", "arti": "Rongga hidung", "elips": [160, 112, 50, 10],
+     "deskripsi": "Rongga hidung bagian dalam. Tempat keluarnya dengung (ghunnah) pada ن dan م."}
+  ],
+  "anggotaArea": {
+    "jauf": ["alif", "wau", "ya"],
+    "halq": ["hamzah", "ha", "ain", "haa", "ghain", "kha"],
+    "lisan": ["qaf", "kaf", "jim", "syin", "ya", "dhad", "lam", "nun", "ra", "tha", "dal", "ta", "shad", "sin", "zai", "zha", "dzal", "tsa"],
+    "syafatain": ["fa", "wau", "ba", "mim"],
+    "khaisyum": []
+  },
+  "huruf": [
+    {"id": "alif", "huruf": "ا", "nama": "Alif", "area": "jauf", "video": null},
+    {"id": "ba", "huruf": "ب", "nama": "Ba", "area": "syafatain", "video": "ZWArlt5aOT4",
+     "titik": [86, 147, 12],
+     "pelajaran": {
+       "makhraj": "Keluar dari **bertemunya bibir atas dan bibir bawah** pada bagian yang basah, dengan dirapatkan kuat lalu dilepaskan.",
+       "langkah": [
+         {"label": "1 · Rapatkan", "judul": "Rapatkan kedua bibir", "isi": "Bibir atas dan bawah bertemu rapat pada bagian yang basah. Udara tertahan di dalam mulut.", "r": 12, "panah": "M70 128 L82 140 M70 166 L82 154"},
+         {"label": "2 · Suarakan", "judul": "Suara tetap berbunyi", "isi": "Pita suara bergetar dan napas tidak ikut keluar. Berbeda dengan bunyi \"p\".", "r": 16, "panah": "M200 170 C170 160 130 152 100 148"},
+         {"label": "3 · Lepaskan", "judul": "Lepaskan dengan cepat", "isi": "Buka bibir sekaligus. Saat ba mati (sukun), bunyinya memantul: inilah qalqalah.", "r": 20, "panah": "M76 147 L56 147 M62 139 L54 147 L62 155"}
+       ],
+       "sifat": [
+         {"nama": "Jahr", "arti": "napas tertahan"},
+         {"nama": "Syiddah", "arti": "suara tertahan"},
+         {"nama": "Istifal", "arti": "pangkal lidah turun, huruf tipis"},
+         {"nama": "Infitah", "arti": "lidah tidak menempel ke langit-langit"},
+         {"nama": "Idzlaq", "arti": "ringan diucapkan"},
+         {"nama": "Qalqalah", "arti": "memantul saat sukun", "tonjol": true}
+       ],
+       "kesalahanUmum": "Saat ba sukun (أَبْ), bunyinya ditahan tanpa pantulan. Ba termasuk huruf qalqalah, jadi harus memantul.",
+       "harakat": [
+         {"teks": "بَ", "label": "ba fathah", "mulai": null},
+         {"teks": "بِ", "label": "bi kasrah", "mulai": null},
+         {"teks": "بُ", "label": "bu dammah", "mulai": null},
+         {"teks": "أَبْ", "label": "ab sukun", "mulai": null}
+       ],
+       "latihan": {"teks": "أَبْ", "baca": "ab · ba sukun, jangan lupa pantulannya",
+                   "cek": ["Kedua bibir tertutup rapat", "Ada pantulan (qalqalah) di akhir", "Tidak ada hembusan napas seperti \"p\""]},
+       "tervalidasi": false
+     }},
+    {"id": "ta", "huruf": "ت", "nama": "Ta", "area": "lisan", "video": "3m_TZd8ZyFw"},
+    {"id": "tsa", "huruf": "ث", "nama": "Tsa", "area": "lisan", "video": "ndtzkBU_md4"},
+    {"id": "jim", "huruf": "ج", "nama": "Jim", "area": "lisan", "video": "PpaDPFWhVSw"},
+    {"id": "haa", "huruf": "ح", "nama": "Ha (tengah tenggorokan)", "area": "halq", "video": "DFTUoU4ZXmU",
+     "titik": [214, 194, 11],
+     "pelajaran": {
+       "makhraj": "Keluar dari **wasthul halq**, yaitu tengah tenggorokan. Bunyinya seperti berbisik dalam dan sedikit tertekan.",
+       "contoh": {"kata": "ٱلْحَمْدُ", "baca": "al-ḥamdu", "arti": "pujian"},
+       "tervalidasi": false
+     }},
+    {"id": "kha", "huruf": "خ", "nama": "Kha", "area": "halq", "video": "K6N7k-JCiWY", "titik": [218, 170, 11]},
+    {"id": "dal", "huruf": "د", "nama": "Dal", "area": "lisan", "video": "P2QDjDTqV-k"},
+    {"id": "dzal", "huruf": "ذ", "nama": "Dzal", "area": "lisan", "video": "WzVqMzb3Mm8"},
+    {"id": "ra", "huruf": "ر", "nama": "Ra", "area": "lisan", "video": "az_K_u7Ca7E"},
+    {"id": "zai", "huruf": "ز", "nama": "Zai", "area": "lisan", "video": "ahXqGxLdYYU"},
+    {"id": "sin", "huruf": "س", "nama": "Sin", "area": "lisan", "video": "s5EcgmQqXvA"},
+    {"id": "syin", "huruf": "ش", "nama": "Syin", "area": "lisan", "video": "yfrytwfI22g"},
+    {"id": "shad", "huruf": "ص", "nama": "Shad", "area": "lisan", "video": "2aluLMAgefY"},
+    {"id": "dhad", "huruf": "ض", "nama": "Dhad", "area": "lisan", "video": null},
+    {"id": "tha", "huruf": "ط", "nama": "Tha", "area": "lisan", "video": null},
+    {"id": "zha", "huruf": "ظ", "nama": "Zha", "area": "lisan", "video": "SYKYHlW9MaM"},
+    {"id": "ain", "huruf": "ع", "nama": "'Ain", "area": "halq", "video": "DFTUoU4ZXmU", "titik": [214, 194, 11]},
+    {"id": "ghain", "huruf": "غ", "nama": "Ghain", "area": "halq", "video": "K6N7k-JCiWY", "titik": [218, 170, 11]},
+    {"id": "fa", "huruf": "ف", "nama": "Fa", "area": "syafatain", "video": "a_4DTJc5opo"},
+    {"id": "qaf", "huruf": "ق", "nama": "Qaf", "area": "lisan", "video": "gj_y7XXsUYg"},
+    {"id": "kaf", "huruf": "ك", "nama": "Kaf", "area": "lisan", "video": "r6ok4eVFr2w"},
+    {"id": "lam", "huruf": "ل", "nama": "Lam", "area": "lisan", "video": "JvzWEQ9MJ34"},
+    {"id": "mim", "huruf": "م", "nama": "Mim", "area": "syafatain", "video": "kWuxqR-BoxI"},
+    {"id": "nun", "huruf": "ن", "nama": "Nun", "area": "lisan", "video": "m1w9h2yhXds"},
+    {"id": "wau", "huruf": "و", "nama": "Wau", "area": "syafatain", "video": "64m9DrhjUZg"},
+    {"id": "ha", "huruf": "ه", "nama": "Ha (pangkal tenggorokan)", "area": "halq", "video": "LznWw6M7u9o",
+     "titik": [212, 222, 11],
+     "pelajaran": {
+       "makhraj": "Keluar dari **aqshal halq**, yaitu pangkal tenggorokan, bagian paling dalam. Bunyinya seperti napas yang ringan dan lepas.",
+       "contoh": {"kata": "هُدًى", "baca": "hudan", "arti": "petunjuk"},
+       "tervalidasi": false
+     }},
+    {"id": "hamzah", "huruf": "ء", "nama": "Hamzah", "area": "halq", "video": "LznWw6M7u9o", "titik": [212, 222, 11]},
+    {"id": "ya", "huruf": "ي", "nama": "Ya", "area": "lisan", "video": "FNcboc_BtA0"}
+  ],
+  "mirip": [
+    {"a": "haa", "b": "ha", "judul": "Ha tebal-tipis yang sering tertukar",
+     "ringkas": "Keduanya dari tenggorokan, tetapi titiknya berbeda. Bedanya bisa mengubah makna.",
+     "kuis": [
+       {"tanya": "Huruf mana yang keluar dari tengah tenggorokan (wasthul halq)?", "jawab": "haa"},
+       {"tanya": "Huruf mana yang keluar dari pangkal tenggorokan (aqshal halq)?", "jawab": "ha"},
+       {"tanya": "Kata ٱلْحَمْدُ (pujian) memakai huruf yang mana?", "jawab": "haa"},
+       {"tanya": "Kata هُدًى (petunjuk) memakai huruf yang mana?", "jawab": "ha"}
+     ]},
+    {"a": "tsa", "b": "sin"},
+    {"a": "dzal", "b": "zai"},
+    {"a": "shad", "b": "sin"},
+    {"a": "qaf", "b": "kaf"},
+    {"a": "ain", "b": "hamzah"}
+  ]
+}

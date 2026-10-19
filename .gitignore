@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dev-dist/
+build/
+.dart_tool/
+.flutter-plugins-dependencies
+.idea/
+*.iml
+*.log
+e2e-report/
+test-results/
+tsconfig.tsbuildinfo
+.DS_Store
+Thumbs.db

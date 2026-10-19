@@ -1,0 +1,154 @@
+{
+  "_catatan": "Semua isi tajwid WAJIB ditinjau pengajar tahsin bersanad sebelum rilis; ubah 'tervalidasi' ke true hanya setelah itu. Rujukan: matan Al-Muqaddimah al-Jazariyyah dan syarahnya Fath Rabb al-Bariyyah (Salim, 2007), bab Makharij (PDF 31-41) dan Shifat (PDF 43-54). Sifat setiap huruf tidak ditulis di sini: dihitung dari kelompok huruf pada matan (lihat src/data/sifat.ts). Koordinat 'posisi' hanya ilustrasi pada penampang 300x240. Detik klip ('mulai'/'selesai') belum dicatat dari video.",
+  "tervalidasi": false,
+  "sumberVideo": [
+    {
+      "id": "andalasy",
+      "kanal": "Al-Andalasy",
+      "guru": "Asy-Syaikh Aiman Rusydi Suwaid",
+      "judul": "Tahsin Camp: Latihan Makhorijul Huruf",
+      "playlist": "PLAlKX7OdTPPbUICvGO1w_xFGorWbtBWLu"
+    },
+    {
+      "id": "resmi",
+      "kanal": "Dr. Ayman Swaid (kanal resmi)",
+      "guru": "Asy-Syaikh Aiman Rusydi Suwaid",
+      "judul": "سلسلة الحروف العربية",
+      "playlist": "PLJi21Zen45zT3XYozZ4BMaFxzuFb4xGcz"
+    }
+  ],
+  "area": [
+    {
+      "id": "jauf", "nama": "Al-Jauf", "arab": "الجوف", "arti": "Rongga mulut dan tenggorokan",
+      "elips": [160, 160, 70, 34],
+      "deskripsi": "Ruang kosong di dalam mulut dan tenggorokan. Huruf mad (bacaan panjang) keluar dari sini dan berhenti bersama habisnya suara."
+    },
+    {
+      "id": "halq", "nama": "Al-Halq", "arab": "الحلق", "arti": "Tenggorokan",
+      "elips": [214, 192, 16, 38],
+      "deskripsi": "Tiga titik di tenggorokan: pangkal (ء ه), tengah (ع ح), dan ujung yang dekat mulut (غ خ)."
+    },
+    {
+      "id": "lisan", "nama": "Al-Lisan", "arab": "اللسان", "arti": "Lidah",
+      "elips": [150, 148, 50, 16],
+      "deskripsi": "Area dengan titik paling banyak: sepuluh titik dan 18 huruf keluar dari bagian-bagian lidah."
+    },
+    {
+      "id": "syafatain", "nama": "Asy-Syafatain", "arab": "الشفتان", "arti": "Dua bibir",
+      "elips": [86, 147, 13, 15],
+      "deskripsi": "Dua bibir. ب dan م dengan merapatkan bibir, و dengan membulatkan bibir tanpa merapatkannya, ف dari bibir bawah dan gigi seri atas."
+    },
+    {
+      "id": "khaisyum", "nama": "Al-Khaisyum", "arab": "الخيشوم", "arti": "Rongga hidung",
+      "elips": [160, 114, 50, 10],
+      "deskripsi": "Rongga hidung bagian dalam yang tersambung ke mulut. Tempat keluarnya dengung (ghunnah) pada ن dan م."
+    }
+  ],
+  "titik": [
+    {"id": "jauf", "no": 1, "area": "jauf", "nama": "Al-Jauf", "posisi": [160, 160, 22],
+     "deskripsi": "Rongga mulut dan tenggorokan. Tempat keluarnya alif, serta wau dan ya ketika menjadi huruf mad."},
+    {"id": "aqshal-halq", "no": 2, "area": "halq", "nama": "Aqshal Halq", "posisi": [212, 222, 11],
+     "deskripsi": "Pangkal tenggorokan, bagian yang paling dalam (paling dekat ke dada)."},
+    {"id": "wasathul-halq", "no": 3, "area": "halq", "nama": "Wasathul Halq", "posisi": [214, 194, 11],
+     "deskripsi": "Tengah tenggorokan."},
+    {"id": "adnal-halq", "no": 4, "area": "halq", "nama": "Adnal Halq", "posisi": [218, 170, 11],
+     "deskripsi": "Ujung tenggorokan, bagian yang paling dekat ke mulut."},
+    {"id": "aqshal-lisan-qaf", "no": 5, "area": "lisan", "nama": "Aqshal Lisan (qaf)", "posisi": [204, 147, 10],
+     "deskripsi": "Pangkal lidah, bagian paling belakang, bertemu langit-langit lunak di atasnya."},
+    {"id": "aqshal-lisan-kaf", "no": 6, "area": "lisan", "nama": "Aqshal Lisan (kaf)", "posisi": [190, 140, 10],
+     "deskripsi": "Pangkal lidah sedikit ke depan dari makhraj qaf, bertemu langit-langit di atasnya."},
+    {"id": "wasathul-lisan", "no": 7, "area": "lisan", "nama": "Wasathul Lisan", "posisi": [150, 135, 11],
+     "deskripsi": "Tengah lidah bertemu langit-langit keras di atasnya."},
+    {"id": "hafatul-lisan", "no": 8, "area": "lisan", "nama": "Hafatul Lisan (dhad)", "posisi": [168, 141, 10],
+     "deskripsi": "Salah satu atau kedua tepi lidah bertemu gigi geraham atas."},
+    {"id": "adnal-hafah", "no": 9, "area": "lisan", "nama": "Tepi lidah depan (lam)", "posisi": [110, 139, 9],
+     "deskripsi": "Tepi lidah bagian depan sampai ujungnya bertemu gusi gigi depan atas."},
+    {"id": "nun", "no": 10, "area": "lisan", "nama": "Ujung lidah (nun)", "posisi": [101, 140, 8],
+     "deskripsi": "Ujung lidah bertemu gusi gigi seri atas, sedikit di bawah makhraj lam."},
+    {"id": "ra", "no": 11, "area": "lisan", "nama": "Ujung dan punggung lidah (ra)", "posisi": [105, 143, 8],
+     "deskripsi": "Ujung lidah beserta sedikit punggungnya bertemu gusi gigi seri atas, dekat makhraj nun."},
+    {"id": "nithiyah", "no": 12, "area": "lisan", "nama": "Nith'iyyah", "posisi": [95, 142, 7],
+     "deskripsi": "Ujung lidah bertemu pangkal gigi seri atas."},
+    {"id": "asaliyah", "no": 13, "area": "lisan", "nama": "Asaliyyah", "posisi": [92, 151, 7],
+     "deskripsi": "Ujung lidah berada di dekat gigi seri bawah, dengan celah sempit di antara gigi seri atas dan bawah."},
+    {"id": "litswiyah", "no": 14, "area": "lisan", "nama": "Litswiyyah", "posisi": [90, 146, 7],
+     "deskripsi": "Ujung lidah bertemu ujung gigi seri atas."},
+    {"id": "fa", "no": 15, "area": "syafatain", "nama": "Bibir bawah dan gigi (fa)", "posisi": [86, 151, 8],
+     "deskripsi": "Bagian dalam bibir bawah bertemu ujung gigi seri atas."},
+    {"id": "syafatain", "no": 16, "area": "syafatain", "nama": "Asy-Syafatain", "posisi": [84, 147, 10],
+     "deskripsi": "Kedua bibir: rapat untuk ب dan م, membulat tanpa rapat untuk و."},
+    {"id": "khaisyum", "no": 17, "area": "khaisyum", "nama": "Al-Khaisyum", "posisi": [160, 116, 12],
+     "deskripsi": "Rongga hidung bagian dalam. Tempat dengung (ghunnah) pada ن dan م."}
+  ],
+  "huruf": [
+    {"id": "alif", "huruf": "ا", "nama": "Alif", "latin": "a (panjang)", "titik": "jauf",
+     "video": null, "videoAlt": null,
+     "catatan": "Alif selalu mati dan didahului fathah, sehingga dipelajari sebagai bacaan panjang (mad)."},
+    {"id": "ba", "huruf": "ب", "nama": "Ba", "latin": "b", "titik": "syafatain",
+     "video": "ZWArlt5aOT4", "videoAlt": "WGU8Sd6vFKg",
+     "pelajaran": {
+       "makhraj": "Keluar dari **bertemunya bibir atas dan bibir bawah** dengan dirapatkan kuat lalu dilepaskan.",
+       "langkah": [
+         {"label": "1 · Rapatkan", "judul": "Rapatkan kedua bibir", "isi": "Bibir atas dan bawah bertemu rapat. Udara tertahan di dalam mulut.", "r": 12, "panah": "M70 128 L82 140 M70 166 L82 154"},
+         {"label": "2 · Suarakan", "judul": "Suara tetap berbunyi", "isi": "Pita suara bergetar dan napas tidak ikut keluar. Berbeda dengan bunyi \"p\".", "r": 16, "panah": "M200 170 C170 160 130 152 100 148"},
+         {"label": "3 · Lepaskan", "judul": "Lepaskan dengan cepat", "isi": "Buka bibir sekaligus. Saat ba mati (sukun), bunyinya memantul: inilah qalqalah.", "r": 20, "panah": "M76 147 L56 147 M62 139 L54 147 L62 155"}
+       ],
+       "kesalahanUmum": "Saat ba sukun (أَبْ), bunyinya ditahan tanpa pantulan. Ba termasuk huruf qalqalah, jadi harus memantul.",
+       "cek": ["Kedua bibir tertutup rapat", "Ada pantulan (qalqalah) di akhir", "Tidak ada hembusan napas seperti \"p\""]
+     }},
+    {"id": "ta", "huruf": "ت", "nama": "Ta", "latin": "t", "titik": "nithiyah", "video": "3m_TZd8ZyFw", "videoAlt": "OEKdyCu5tYI"},
+    {"id": "tsa", "huruf": "ث", "nama": "Tsa", "latin": "ts", "titik": "litswiyah", "video": "ndtzkBU_md4", "videoAlt": "8qORFReh9Xk",
+     "kesalahan": {"teks": "Diucapkan seperti س (s). Ujung lidah harus menyentuh ujung gigi seri atas, bukan berada di belakang gigi.", "sumber": "Kesalahan س-ث tercatat pada penutur dialek Ngapak (lihat laporan riset, bagian data dan konten)."}},
+    {"id": "jim", "huruf": "ج", "nama": "Jim", "latin": "j", "titik": "wasathul-lisan", "video": "PpaDPFWhVSw", "videoAlt": "-T1lUoAC7BE"},
+    {"id": "haa", "huruf": "ح", "nama": "Ha (tengah tenggorokan)", "latin": "ḥ", "titik": "wasathul-halq",
+     "video": "DFTUoU4ZXmU", "videoAlt": "8RC7L5_h278",
+     "pelajaran": {
+       "makhraj": "Keluar dari **wasthul halq**, yaitu tengah tenggorokan. Napas tetap mengalir sehingga bunyinya terdengar berdesah dari tenggorokan.",
+       "cek": ["Bunyi keluar dari tengah tenggorokan, bukan dari dada", "Napas tetap mengalir (desah)", "Tidak terdengar seperti h ringan"]
+     }},
+    {"id": "kha", "huruf": "خ", "nama": "Kha", "latin": "kh", "titik": "adnal-halq", "video": "K6N7k-JCiWY", "videoAlt": "79bQscAJ5bo"},
+    {"id": "dal", "huruf": "د", "nama": "Dal", "latin": "d", "titik": "nithiyah", "video": "P2QDjDTqV-k", "videoAlt": "PMroDhynuUY"},
+    {"id": "dzal", "huruf": "ذ", "nama": "Dzal", "latin": "dz", "titik": "litswiyah", "video": "WzVqMzb3Mm8", "videoAlt": "8qORFReh9Xk"},
+    {"id": "ra", "huruf": "ر", "nama": "Ra", "latin": "r", "titik": "ra", "video": "az_K_u7Ca7E", "videoAlt": "lfSnx-3xMv8"},
+    {"id": "zai", "huruf": "ز", "nama": "Zai", "latin": "z", "titik": "asaliyah", "video": "ahXqGxLdYYU", "videoAlt": "68MLdcrYh88"},
+    {"id": "sin", "huruf": "س", "nama": "Sin", "latin": "s", "titik": "asaliyah", "video": "s5EcgmQqXvA", "videoAlt": "0-TVbZ5zZwE"},
+    {"id": "syin", "huruf": "ش", "nama": "Syin", "latin": "sy", "titik": "wasathul-lisan", "video": "yfrytwfI22g", "videoAlt": "Da0nBzRhFTo"},
+    {"id": "shad", "huruf": "ص", "nama": "Shad", "latin": "ṣ", "titik": "asaliyah", "video": "2aluLMAgefY", "videoAlt": null},
+    {"id": "dhad", "huruf": "ض", "nama": "Dhad", "latin": "ḍ", "titik": "hafatul-lisan", "video": null, "videoAlt": "8nZ1SaKJyuI"},
+    {"id": "tha", "huruf": "ط", "nama": "Tha", "latin": "ṭ", "titik": "nithiyah", "video": null, "videoAlt": "WykxsArGLqg"},
+    {"id": "zha", "huruf": "ظ", "nama": "Zha", "latin": "ẓ", "titik": "litswiyah", "video": "SYKYHlW9MaM", "videoAlt": "DDvJKNQaEAI"},
+    {"id": "ain", "huruf": "ع", "nama": "'Ain", "latin": "'", "titik": "wasathul-halq", "video": "DFTUoU4ZXmU", "videoAlt": "2LRv-JVSQzQ",
+     "kesalahan": {"teks": "Dilemahkan atau dihilangkan sehingga terdengar seperti \"a\" atau hamzah. Tengah tenggorokan harus ikut menekan.", "sumber": "Pelemahan ع tercatat pada penutur bahasa Sunda dan pertukaran ع-أ pada penutur Ngapak (lihat laporan riset)."}},
+    {"id": "ghain", "huruf": "غ", "nama": "Ghain", "latin": "gh", "titik": "adnal-halq", "video": "K6N7k-JCiWY", "videoAlt": null},
+    {"id": "fa", "huruf": "ف", "nama": "Fa", "latin": "f", "titik": "fa", "video": "a_4DTJc5opo", "videoAlt": "q4aBMRXCqkU"},
+    {"id": "qaf", "huruf": "ق", "nama": "Qaf", "latin": "q", "titik": "aqshal-lisan-qaf", "video": "gj_y7XXsUYg", "videoAlt": null,
+     "kesalahan": {"teks": "Dibaca seperti ك (k). Pangkal lidah yang paling belakang harus naik ke langit-langit lunak, dan bunyinya tebal.", "sumber": "Pertukaran ق-ك tercatat pada penutur bahasa Jawa (Suryana dkk., 2026)."}},
+    {"id": "kaf", "huruf": "ك", "nama": "Kaf", "latin": "k", "titik": "aqshal-lisan-kaf", "video": "r6ok4eVFr2w", "videoAlt": "FpKjLAjUXhw"},
+    {"id": "lam", "huruf": "ل", "nama": "Lam", "latin": "l", "titik": "adnal-hafah", "video": "JvzWEQ9MJ34", "videoAlt": "bNqBT4CIT6I"},
+    {"id": "mim", "huruf": "م", "nama": "Mim", "latin": "m", "titik": "syafatain", "video": "kWuxqR-BoxI", "videoAlt": "tWRz4rWPuIM"},
+    {"id": "nun", "huruf": "ن", "nama": "Nun", "latin": "n", "titik": "nun", "video": "m1w9h2yhXds", "videoAlt": "h59PkWYI0bk"},
+    {"id": "wau", "huruf": "و", "nama": "Wau", "latin": "w", "titik": "syafatain", "titikMad": "jauf", "video": "64m9DrhjUZg", "videoAlt": "Rx5fGIsTycg"},
+    {"id": "ha", "huruf": "ه", "nama": "Ha (pangkal tenggorokan)", "latin": "h", "titik": "aqshal-halq",
+     "video": "LznWw6M7u9o", "videoAlt": "Fl3YcQBkWiU",
+     "pelajaran": {
+       "makhraj": "Keluar dari **aqshal halq**, yaitu pangkal tenggorokan, bagian paling dalam. Bunyinya ringan dan napasnya lepas.",
+       "cek": ["Bunyi keluar dari pangkal tenggorokan", "Napas lepas dan ringan", "Tidak berdesah tebal seperti ح"]
+     }},
+    {"id": "hamzah", "huruf": "ء", "nama": "Hamzah", "latin": "'", "titik": "aqshal-halq", "video": "LznWw6M7u9o", "videoAlt": null},
+    {"id": "ya", "huruf": "ي", "nama": "Ya", "latin": "y", "titik": "wasathul-lisan", "titikMad": "jauf", "video": "FNcboc_BtA0", "videoAlt": "2H4nNYWzrzw"}
+  ],
+  "mirip": [
+    {"a": "haa", "b": "ha", "judul": "Ha tebal-tipis yang sering tertukar",
+     "ringkas": "Keduanya dari tenggorokan, tetapi titiknya berbeda. Bedanya bisa mengubah makna kata."},
+    {"a": "tsa", "b": "sin", "judul": "Tsa dan Sin",
+     "ringkas": "Tsa keluar dari ujung lidah yang menyentuh ujung gigi seri atas; Sin dari ujung lidah di dekat gigi seri bawah dengan bunyi desis."},
+    {"a": "dzal", "b": "zai", "judul": "Dzal dan Zai",
+     "ringkas": "Dzal keluar dari ujung lidah dan ujung gigi seri atas; Zai dari ujung lidah di dekat gigi seri bawah dengan desis."},
+    {"a": "shad", "b": "sin", "judul": "Shad dan Sin",
+     "ringkas": "Makhrajnya sama, tetapi Shad tebal (pangkal lidah naik dan menutup ke langit-langit), sedangkan Sin tipis."},
+    {"a": "qaf", "b": "kaf", "judul": "Qaf dan Kaf",
+     "ringkas": "Qaf keluar dari pangkal lidah paling belakang dan tebal; Kaf sedikit lebih ke depan dan tipis."},
+    {"a": "ain", "b": "hamzah", "judul": "'Ain dan Hamzah",
+     "ringkas": "'Ain keluar dari tengah tenggorokan dengan tekanan; Hamzah dari pangkal tenggorokan dan terputus tegas."}
+  ]
+}

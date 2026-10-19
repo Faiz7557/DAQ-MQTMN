@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Peta Makhraj</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0F5E5E}a:hover{color:#0A4444}
+</style>
+</helmet>
+<div style="width: 390px; height: 980px; box-sizing: border-box; background: #FBF8F2; font-family: 'Plus Jakarta Sans', sans-serif; color: #1C2333; padding: 20px 20px 28px; display: flex; flex-direction: column; gap: 16px">
+  <div style="display: flex; align-items: center; gap: 12px; height: 44px">
+    <a href="Main.dc.html" aria-label="Kembali" style="width: 44px; height: 44px; border-radius: 22px; background: #FFFFFF; border: 1px solid #E8E1D3; display: flex; align-items: center; justify-content: center; color: #1C2333">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+    </a>
+    <span style="font-size: 17px; font-weight: 700">Peta Makhraj</span>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E8E1D3; border-radius: 24px; padding: 12px; display: flex; flex-direction: column; gap: 6px">
+    <svg viewBox="0 0 300 240" width="100%" role="img" aria-label="{{area.aria}}">
+      <rect x="0" y="0" width="300" height="240" rx="16" fill="#F4EFE5"></rect>
+      <path d="M262 14 C190 8 128 30 112 70 C106 86 100 98 80 116 L94 124 C92 130 86 136 82 140 C86 144 90 146 90 147 C88 149 84 151 82 155 C88 160 92 166 94 172 C96 182 104 190 130 194 C150 197 160 202 165 212 L170 236 L292 236 L292 14 Z" fill="#FFFFFF" stroke="#1C2333" stroke-width="2" stroke-linejoin="round"></path>
+      <path d="M100 114 C140 100 190 98 222 110" fill="none" stroke="#9AA0AE" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M104 124 C150 116 190 118 222 124" fill="none" stroke="#9AA0AE" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M92 136 C130 126 185 124 214 134 C222 140 224 150 220 160" fill="none" stroke="#9AA0AE" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M92 150 C112 138 165 132 196 144 C210 152 212 172 204 196 L182 196 C160 180 120 168 92 156 Z" fill="#F2CFC6" stroke="#C98B80" stroke-width="1.5"></path>
+      <path d="M222 124 C232 160 232 200 226 236" fill="none" stroke="#9AA0AE" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M204 196 C202 212 200 225 198 236" fill="none" stroke="#9AA0AE" stroke-width="2" stroke-linecap="round"></path>
+      <ellipse cx="{{area.cx}}" cy="{{area.cy}}" rx="{{area.rx}}" ry="{{area.ry}}" fill="#E2A93B" fill-opacity="0.45" stroke="#B57F14" stroke-width="2.5"></ellipse>
+    </svg>
+    <span style="font-size: 12px; color: #5A6070; text-align: center">Penampang samping kepala · area tersorot = tempat keluar huruf</span>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 8px">
+    <sc-for list="{{areas}}" as="a" hint-placeholder-count="5">
+      <sc-if value="{{a.selected}}" hint-placeholder-val="{{false}}">
+        <button type="button" aria-pressed="true" onClick="{{a.pick}}" style="min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid #0F5E5E; background: #0F5E5E; color: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer">{{a.name}}</button>
+      </sc-if>
+      <sc-if value="{{a.unselected}}" hint-placeholder-val="{{true}}">
+        <button type="button" aria-pressed="false" onClick="{{a.pick}}" style="min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid #D9D0BE; background: #FFFFFF; color: #1C2333; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer">{{a.name}}</button>
+      </sc-if>
+    </sc-for>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E8E1D3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <span style="font-size: 18px; font-weight: 700">{{area.name}} <span style="font-weight: 500; color: #5A6070">· {{area.id}}</span></span>
+      <span style="font-size: 14px; line-height: 1.55; color: #3A4152">{{area.desc}}</span>
+    </div>
+    <span style="font-size: 13px; font-weight: 700; color: #5A6070">{{area.count}}</span>
+    <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px" dir="rtl">
+      <sc-for list="{{area.letters}}" as="h" hint-placeholder-count="6">
+        <a href="{{h.href}}" lang="ar" aria-label="{{h.label}}" style="{{h.style}}">{{h.ch}}</a>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":980}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const data = [
+      { key: 'jauf', name: 'Al-Jauf', id: 'Rongga mulut & tenggorokan', cx: 160, cy: 160, rx: 70, ry: 34,
+        desc: 'Ruang kosong di mulut dan tenggorokan. Tempat keluarnya huruf mad (bacaan panjang).',
+        letters: ['ا', 'و', 'ي'] },
+      { key: 'halq', name: 'Al-Halq', id: 'Tenggorokan', cx: 214, cy: 192, rx: 16, ry: 38,
+        desc: 'Tiga titik di tenggorokan: pangkal (ء ه), tengah (ع ح), dan ujung (غ خ).',
+        letters: ['ء', 'ه', 'ع', 'ح', 'غ', 'خ'] },
+      { key: 'lisan', name: 'Al-Lisan', id: 'Lidah', cx: 150, cy: 148, rx: 50, ry: 16,
+        desc: 'Area paling banyak: 18 huruf keluar dari pangkal, tengah, tepi, dan ujung lidah.',
+        letters: ['ق', 'ك', 'ج', 'ش', 'ي', 'ض', 'ل', 'ن', 'ر', 'ط', 'د', 'ت', 'ص', 'س', 'ز', 'ظ', 'ذ', 'ث'] },
+      { key: 'syafatain', name: 'Asy-Syafatain', id: 'Dua bibir', cx: 86, cy: 147, rx: 13, ry: 15,
+        desc: 'Dua bibir. ب dan م dengan merapatkan bibir, و dengan memonyongkan, ف dari bibir bawah dan gigi atas.',
+        letters: ['ف', 'و', 'ب', 'م'] },
+      { key: 'khaisyum', name: 'Al-Khaisyum', id: 'Rongga hidung', cx: 160, cy: 112, rx: 50, ry: 10,
+        desc: 'Pangkal hidung. Tempat keluarnya dengung (ghunnah), misalnya pada نّ dan مّ.',
+        letters: ['نّ', 'مّ'] }
+    ];
+    const cur = (this.state && this.state.k) || 'syafatain';
+    const sel = data.find((d) => d.key === cur);
+    const base = 'height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-family: \'Noto Naskh Arabic\', serif; font-size: 24px; font-weight: 700;';
+    const area = {
+      ...sel,
+      aria: 'Penampang samping mulut dan tenggorokan, menyorot ' + sel.name + ' (' + sel.id + ')',
+      count: sel.letters.length + ' huruf · ketuk untuk belajar',
+      letters: sel.letters.map((ch) => ({
+        ch,
+        label: 'Belajar huruf ' + ch,
+        href: ch === 'ب' ? 'Pelajaran.dc.html' : '#',
+        style: base + (ch === 'ب'
+          ? ' background: #0F5E5E; color: #FFFFFF;'
+          : ' background: #DCEDEA; color: #0F5E5E;')
+      }))
+    };
+    return {
+      area,
+      areas: data.map((d) => ({
+        name: d.name,
+        selected: d.key === cur,
+        unselected: d.key !== cur,
+        pick: () => this.setState({ k: d.key })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
