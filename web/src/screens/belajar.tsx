@@ -297,10 +297,11 @@ function LangkahDengar({ h }: { h: Huruf }) {
           <p className="mb-3 font-bold tracking-tight">Dengar per harakat</p>
           <div dir="rtl" className="grid grid-cols-4 gap-2 xl:grid-cols-2">
             {harakatHuruf(h).map((x) => (
-              <button key={x.teks} disabled={!klip} onClick={() => dengar(x.label)} aria-label={`Dengar ${x.label}`}
+              // Nama aksesibel diambil dari isi tombol (WCAG 2.5.3): huruf berharakat + label Latin.
+              <button key={x.teks} disabled={!klip} onClick={() => dengar(x.label)}
                 className="arab flex min-h-16 flex-col items-center justify-center rounded-2xl border border-line bg-cream text-3xl hover:border-tint disabled:opacity-40 xl:min-h-24 xl:text-4xl">
                 <span lang="ar" className="leading-tight">{x.teks}</span>
-                <span dir="ltr" className="hidden font-sans text-xs text-grey xl:block">{x.label}</span>
+                <span dir="ltr" className="sr-only font-sans text-xs text-grey xl:not-sr-only xl:block">{x.label}</span>
               </button>
             ))}
           </div>
