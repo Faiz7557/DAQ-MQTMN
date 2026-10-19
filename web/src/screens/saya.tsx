@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router'
 import { materi, tesMakhraj } from '../data/materi'
 import { eksporStudi, hariBeruntun, hariPekanIni, rekaman, skorSus, useApp } from '../store'
-import { Catatan, Halaman, Ikon, Kartu, Logo, Saklar, Segmen, Subjudul, Tombol, temaSistem, terapkanTema, toast } from '../components'
+import { Catatan, Halaman, Ikon, Kartu, Logo, Saklar, Segmen, Subjudul, Tombol, TombolTema, temaSistem, terapkanTema, toast } from '../components'
 
 // ================= Profil =================
 export function Saya() {
@@ -111,6 +111,7 @@ export function Pengenalan() {
   const { atur } = useApp()
   return (
     <main className="grid min-h-dvh lg:grid-cols-[1fr_1.05fr]">
+      <div className="fixed top-[max(1rem,env(safe-area-inset-top))] right-4 z-10"><TombolTema /></div>
       <section className="relative flex min-h-[38dvh] items-center justify-center overflow-hidden rounded-b-[2.5rem] bg-gradient-to-br from-[#147a73] via-[#0f5e5e] to-[#0a4343] px-6 pt-[env(safe-area-inset-top)] lg:sticky lg:top-0 lg:h-dvh lg:rounded-none">
         <span className="pola-khatam absolute inset-0 opacity-90" />
         <div aria-hidden className="absolute inset-0 grid grid-cols-3 place-items-center gap-6 p-10 opacity-[0.12] lg:p-20">
